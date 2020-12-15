@@ -683,7 +683,7 @@ en_GB:
   media_attachments:
     validations:
       images_and_video: Cannot attach a video to a status that already contains images
-      too_many: Cannot attach more than 4 files
+      too_many: Cannot attach more than 9 files
   migrations:
     acct: username@domain of the new account
     currently_redirecting: 'Your profile is set to redirect to:'
