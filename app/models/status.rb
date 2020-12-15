@@ -59,7 +59,7 @@ class Status < ApplicationRecord
     quote: { status: { account: [:account_stat, user: :role] } },
   ].freeze
 
-  MEDIA_ATTACHMENTS_LIMIT = 4
+  MEDIA_ATTACHMENTS_LIMIT = 9
 
   rate_limit by: :account, family: :statuses
 
