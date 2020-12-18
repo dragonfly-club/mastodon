@@ -41,6 +41,7 @@ class UserSettings
     setting :color_scheme, default: 'auto', in: %w(auto light dark)
     setting :contrast, default: 'auto', in: %w(auto high)
     setting :enable_noto_serif, default: false
+    setting :enable_snowfall, default: false
   end
 
   namespace :notification_emails do
