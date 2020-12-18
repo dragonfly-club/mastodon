@@ -48,6 +48,9 @@
         - else
           = vite_stylesheet_tag 'styles/entrypoints/noto-serif-sc.scss', media: 'all', crossorigin: 'anonymous'
 
+    -if user_signed_in? && current_user.setting_enable_snowfall
+      = vite_typescript_tag 'snowfall.ts', crossorigin: 'anonymous', async: true
+
     = yield :header_tags
 
   %body{ class: body_classes }
