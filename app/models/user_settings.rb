@@ -38,6 +38,7 @@ class UserSettings
     setting :auto_play, default: false
     setting :emoji_style, default: 'auto', in: %w(auto native twemoji)
     setting :enable_noto_serif, default: false
+    setting :enable_snowfall, default: false
   end
 
   namespace :notification_emails do
