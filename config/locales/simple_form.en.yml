@@ -202,6 +202,7 @@ en:
         setting_display_media_default: Default
         setting_display_media_hide_all: Hide all
         setting_display_media_show_all: Show all
+        setting_enable_snowfall: Enable snowfall effect
         setting_enable_noto_serif: Use serif font (Noto Serif)
         setting_expand_spoilers: Always expand posts marked with content warnings
         setting_hide_network: Hide your social graph
