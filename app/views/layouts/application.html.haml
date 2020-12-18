@@ -45,6 +45,10 @@
         - else
           = stylesheet_pack_tag 'noto-serif-sc', media: 'all', crossorigin: 'anonymous'
 
+    -if user_signed_in? && current_user.setting_enable_snowfall
+      = javascript_pack_tag 'snowfall', crossorigin: 'anonymous', async: true
+      = stylesheet_pack_tag 'snowfall', media: 'all', crossorigin: 'anonymous', id: 'snowfall'
+
     = yield :header_tags
 
   %body{ class: body_classes }
