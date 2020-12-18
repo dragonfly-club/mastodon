@@ -95,6 +95,10 @@ module HasUserSettings
     settings['web.disable_swiping']
   end
 
+  def setting_enable_snowfall
+    settings['web.enable_snowfall']
+  end
+
   def setting_always_send_emails
     settings['always_send_emails']
   end
