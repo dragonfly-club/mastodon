@@ -30,6 +30,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       store[:use_blurhash]      = object_account_user.setting_use_blurhash
       store[:use_pending_items] = object_account_user.setting_use_pending_items
       store[:enable_noto_serif]   = object.current_account.user.setting_enable_noto_serif
+      store[:enable_snowfall]   = object.current_account.user.setting_enable_snowfall
       store[:show_trends]       = Setting.trends && object_account_user.setting_trends
       store[:emoji_style]       = object_account_user.settings['web.emoji_style'] if Mastodon::Feature.modern_emojis_enabled?
     else
