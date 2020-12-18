@@ -95,6 +95,10 @@ module User::HasSettings
     settings['web.disable_swiping']
   end
 
+  def setting_enable_snowfall
+    settings['web.enable_snowfall']
+  end
+  
   def setting_disable_hover_cards
     settings['web.disable_hover_cards']
   end
