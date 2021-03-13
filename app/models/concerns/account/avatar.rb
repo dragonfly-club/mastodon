@@ -5,7 +5,7 @@ module Account::Avatar
 
   MAX_DESCRIPTION_LENGTH = 150
   AVATAR_IMAGE_MIME_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'].freeze
-  AVATAR_LIMIT = 8.megabytes
+  AVATAR_LIMIT = ((ENV['AVATAR_LIMIT'] || 20).to_i).megabytes
   AVATAR_DIMENSIONS = [400, 400].freeze
   AVATAR_GEOMETRY = [AVATAR_DIMENSIONS.first, AVATAR_DIMENSIONS.last].join('x')
 
