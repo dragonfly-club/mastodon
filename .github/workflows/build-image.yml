@@ -2,8 +2,6 @@ name: Build container image
 on:
   workflow_dispatch:
   push:
-    branches:
-      - 'main'
     tags:
       - '*'
   pull_request:
@@ -25,7 +23,7 @@ jobs:
       - uses: docker/metadata-action@v3
         id: meta
         with:
-          images: tootsuite/mastodon
+          images: holgerhuo/mastodon
           flavor: |
             latest=auto
           tags: |
