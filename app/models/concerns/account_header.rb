@@ -4,7 +4,7 @@ module AccountHeader
   extend ActiveSupport::Concern
 
   IMAGE_MIME_TYPES = ['image/jpeg', 'image/png', 'image/gif', 'image/webp'].freeze
-  LIMIT = 2.megabytes
+  LIMIT = ((ENV['HEADER_LIMIT'] || 20).to_i).megabytes
   MAX_PIXELS = 750_000 # 1500x500px
 
   class_methods do
