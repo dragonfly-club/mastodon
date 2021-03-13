@@ -47,8 +47,8 @@ jobs:
         id: meta
         with:
           images: |
-            tootsuite/mastodon
-            ghcr.io/mastodon/mastodon
+            holgerhuo/mastodon
+            ghcr.io/dragonfly-club/mastodon
           flavor: |
             latest=auto
           tags: |
