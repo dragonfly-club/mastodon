@@ -50,11 +50,11 @@ module Mastodon
     end
 
     def repository
-      ENV.fetch('GITHUB_REPOSITORY', 'mastodon/mastodon')
+      ENV.fetch('GITHUB_REPOSITORY', 'island/mastodon')
     end
 
     def source_base_url
-      ENV.fetch('SOURCE_BASE_URL', "https://github.com/#{repository}")
+      ENV.fetch('SOURCE_BASE_URL', "https://code.dragoncloud.win/#{repository}")
     end
 
     # specify git tag or commit hash here
@@ -63,11 +63,7 @@ module Mastodon
     end
 
     def source_url
-      if source_tag
-        "#{source_base_url}/tree/#{source_tag}"
-      else
-        source_base_url
-      end
+      "https://code.dragoncloud.win/island/mastodon"
     end
 
     def user_agent
