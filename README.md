@@ -4,14 +4,18 @@
   <img alt="Mastodon" src="./lib/assets/wordmark.light.png?raw=true" height="34">
 </picture></h1>
 
-[![GitHub release](https://img.shields.io/github/release/mastodon/mastodon.svg)][releases]
-[![Build Status](https://img.shields.io/circleci/project/github/mastodon/mastodon.svg)][circleci]
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/mastodon/mastodon.svg)][code_climate]
+## Fork Notes
+
+This is a Mastodon fork used for [Island 岛屿](https://mast.dragon-fly.club). The [main branch](https://github.com/dragonfly-club/mastodon/commits/main) is a rebase fork with all local edits rebased at the top of the commits.
+
+[![GitHub release](https://img.shields.io/github/release/dragonfly-club/mastodon.svg)][releases]
+[![Build Status](https://img.shields.io/circleci/project/github/dragonfly-club/mastodon.svg)][circleci]
+[![Code Climate](https://img.shields.io/codeclimate/maintainability/dragonfly-club/mastodon.svg)][code_climate]
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/mastodon/localized.svg)][crowdin]
 
-[releases]: https://github.com/mastodon/mastodon/releases
-[circleci]: https://circleci.com/gh/mastodon/mastodon
-[code_climate]: https://codeclimate.com/github/mastodon/mastodon
+[releases]: https://github.com/dragonfly-club/mastodon/releases
+[circleci]: https://circleci.com/gh/dragonfly-club/mastodon
+[code_climate]: https://codeclimate.com/github/dragonfly-club/mastodon
 [crowdin]: https://crowdin.com/project/mastodon
 
 Mastodon is a **free, open-source social network server** based on ActivityPub where users can follow friends and discover new ones. On Mastodon, users can publish anything they want: links, pictures, text, video. All Mastodon servers are interoperable as a federated network (users on one server can seamlessly communicate with users from another one, including non-Mastodon software that implements ActivityPub!)
