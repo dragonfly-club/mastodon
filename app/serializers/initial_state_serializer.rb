@@ -5,13 +5,17 @@ class InitialStateSerializer < ActiveModel::Serializer
 
   attributes :meta, :compose, :accounts,
              :media_attachments, :settings,
-             :languages
+             :languages, :max_toot_chars
 
   attribute :critical_updates_pending, if: -> { object&.role&.can?(:view_devops) && SoftwareUpdate.check_enabled? }
 
   has_one :push_subscription, serializer: REST::WebPushSubscriptionSerializer
   has_one :role, serializer: REST::RoleSerializer
 
+  def max_toot_chars
+    StatusLengthValidator::MAX_CHARS
+  end
+  
   def meta
     store = {
       streaming_api_base_url: Rails.configuration.x.streaming_api_base_url,
