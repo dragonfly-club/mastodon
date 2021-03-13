@@ -1,3 +1,9 @@
+## Fork Notes
+
+This is a Mastodon fork used for [Island 岛屿](https://mast.dragon-fly.club). The [main branch](https://code.dragoncloud.win/island/mastodon/src/branch/main) is a rebase fork with all local edits rebased at the top of the commits.
+
+[![releases](https://code.dragoncloud.win/island/mastodon/badges/release.svg)](https://code.dragoncloud.win/island/mastodon/releases)
+
 > [!NOTE]
 > Want to learn more about Mastodon?
 > Click below to find out more in a video.
