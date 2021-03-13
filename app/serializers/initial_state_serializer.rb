@@ -5,12 +5,17 @@ class InitialStateSerializer < ActiveModel::Serializer
 
   attributes :meta, :compose, :accounts,
              :media_attachments, :settings,
-             :languages
+             :languages, :max_toot_chars
 
   has_one :push_subscription, serializer: REST::WebPushSubscriptionSerializer
   has_one :role, serializer: REST::RoleSerializer
 
   # rubocop:disable Metrics/AbcSize
+  
+  def max_toot_chars
+    StatusLengthValidator::MAX_CHARS
+  end
+
   def meta
     store = {
       streaming_api_base_url: Rails.configuration.x.streaming_api_base_url,
