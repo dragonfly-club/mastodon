@@ -9,6 +9,10 @@ class REST::InstanceSerializer < ActiveModel::Serializer
 
   has_one :contact_account, serializer: REST::AccountSerializer
 
+  def max_toot_chars
+    StatusLengthValidator::MAX_CHARS
+  end
+
   has_many :rules, serializer: REST::RuleSerializer
 
   delegate :contact_account, :rules, to: :instance_presenter
