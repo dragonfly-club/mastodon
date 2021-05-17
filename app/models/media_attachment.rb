@@ -150,8 +150,8 @@ class MediaAttachment < ApplicationRecord
     all: '-quality 90 -strip +set modify-date +set create-date',
   }.freeze
 
-  IMAGE_LIMIT = 24.megabytes
-  VIDEO_LIMIT = 80.megabytes
+  IMAGE_LIMIT = ((ENV['IMAGE_LIMIT'] || 24).to_i).megabytes
+  VIDEO_LIMIT = ((ENV['VIDEO_LIMIT'] || 80).to_i).megabytes
 
   MAX_VIDEO_MATRIX_LIMIT = 2_304_000 # 1920x1200px
   MAX_VIDEO_FRAME_RATE   = 60
