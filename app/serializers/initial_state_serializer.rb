@@ -54,6 +54,7 @@ class InitialStateSerializer < ActiveModel::Serializer
       store[:advanced_layout]   = object.current_account.user.setting_advanced_layout
       store[:use_blurhash]      = object.current_account.user.setting_use_blurhash
       store[:use_pending_items] = object.current_account.user.setting_use_pending_items
+      store[:enable_noto_serif]   = object.current_account.user.setting_enable_noto_serif
       store[:show_trends]       = Setting.trends && object.current_account.user.setting_trends
     else
       store[:auto_play_gif] = Setting.auto_play_gif
