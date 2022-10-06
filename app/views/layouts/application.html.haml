@@ -36,6 +36,15 @@
     = stylesheet_link_tag '/inert.css', skip_pipeline: true, media: 'all', id: 'inert-style'
     = stylesheet_link_tag custom_css_path, skip_pipeline: true, host: root_url, media: 'all'
 
+    - if user_signed_in? and current_user.setting_enable_noto_serif
+      - unless current_user.setting_system_font_ui
+        - if ['zh-HK', 'zh-TW'].include? I18n.locale.to_s
+          = stylesheet_pack_tag 'noto-serif-tc', media: 'all', crossorigin: 'anonymous'
+        - elsif ['ja'].include? I18n.locale.to_s
+          = stylesheet_pack_tag 'noto-serif-jp', media: 'all', crossorigin: 'anonymous'
+        - else
+          = stylesheet_pack_tag 'noto-serif-sc', media: 'all', crossorigin: 'anonymous'
+
     = yield :header_tags
 
   %body{ class: body_classes }
