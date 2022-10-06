@@ -39,11 +39,11 @@ defaults: &defaults
   trendable_by_default: false
   crop_images: true
   notification_emails:
-    follow: true
+    follow: false
     reblog: false
     favourite: false
-    mention: true
-    follow_request: true
+    mention: false
+    follow_request: false
     digest: true
     report: true
     pending_account: true
