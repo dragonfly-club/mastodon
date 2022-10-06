@@ -62,6 +62,7 @@ zh-TW:
         setting_display_media_hide_all: 總是隱藏所有媒體
         setting_display_media_show_all: 總是顯示標為敏感內容的媒體
         setting_system_scrollbars_ui: 僅套用至基於 Safari 或 Chrome 之桌面瀏覽器
+        setting_enable_noto_serif: 启用衬线字体(Noto Serif)
         setting_use_blurhash: 彩色漸層圖樣是基於隱藏媒體內容顏色產生，所有細節將變得模糊
         setting_use_pending_items: 關閉自動捲動更新，時間軸僅於點擊後更新
         username: 您可以使用字幕、數字與底線
