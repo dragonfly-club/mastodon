@@ -115,6 +115,10 @@ module User::HasSettings
     settings['default_quote_policy'] || 'public'
   end
 
+  def setting_enable_noto_serif
+    settings['web.enable_noto_serif']
+  end
+
   def allows_report_emails?
     settings['notification_emails.report']
   end
