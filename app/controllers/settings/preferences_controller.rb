@@ -45,6 +45,7 @@ class Settings::PreferencesController < Settings::BaseController
       :setting_reduce_motion,
       :setting_disable_swiping,
       :setting_enable_snowfall,
+      :setting_enable_noto_serif,
       :setting_system_font_ui,
       :setting_noindex,
       :setting_theme,

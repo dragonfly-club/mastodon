@@ -29,6 +29,7 @@ class UserSettingsDecorator
     user.settings['reduce_motion']       = reduce_motion_preference if change?('setting_reduce_motion')
     user.settings['disable_swiping']     = disable_swiping_preference if change?('setting_disable_swiping')
     user.settings['enable_snowfall']     = enable_snowfall if change?('setting_enable_snowfall')
+    user.settings['enable_noto_serif']   = enable_noto_serif if change?('setting_enable_noto_serif')
     user.settings['system_font_ui']      = system_font_ui_preference if change?('setting_system_font_ui')
     user.settings['noindex']             = noindex_preference if change?('setting_noindex')
     user.settings['theme']               = theme_preference if change?('setting_theme')
@@ -96,6 +97,10 @@ class UserSettingsDecorator
 
   def enable_snowfall
     boolean_cast_setting 'setting_enable_snowfall'
+  end
+
+  def enable_noto_serif
+    boolean_cast_setting 'setting_enable_noto_serif'
   end
 
   def noindex_preference
