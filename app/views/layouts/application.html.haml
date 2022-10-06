@@ -39,6 +39,15 @@
 
     = custom_stylesheet
 
+    - if user_signed_in? and current_user.setting_enable_noto_serif
+      - unless current_user.setting_system_font_ui
+        - if ['zh-HK', 'zh-TW'].include? I18n.locale.to_s
+          = vite_stylesheet_tag 'styles/entrypoints/noto-serif-tc.scss', media: 'all', crossorigin: 'anonymous'
+        - elsif ['ja'].include? I18n.locale.to_s
+          = vite_stylesheet_tag 'styles/entrypoints/noto-serif-jp.scss', media: 'all', crossorigin: 'anonymous'
+        - else
+          = vite_stylesheet_tag 'styles/entrypoints/noto-serif-sc.scss', media: 'all', crossorigin: 'anonymous'
+
     = yield :header_tags
 
   %body{ class: body_classes }
