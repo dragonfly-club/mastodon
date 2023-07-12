@@ -1557,6 +1557,9 @@ zh-CN:
     contrast: Mastodon（高对比度）
     default: Mastodon（暗色主题）
     mastodon-light: Mastodon（亮色主题）
+    mastodon-bird-ui-dark: Mastodon 推特UI (暗色)
+    mastodon-bird-ui-light: Mastodon 推特UI (亮色)
+    mastodon-bird-ui-contrast: Mastodon 推特UI (高对比度)
   time:
     formats:
       default: "%Y年%m月%d日 %H:%M"
