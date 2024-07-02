@@ -6,8 +6,8 @@ class Trends::Links < Trends::Base
   BATCH_SIZE = 100
 
   self.default_options = {
-    threshold: 5,
-    review_threshold: 3,
+    threshold: 2,
+    review_threshold: 2,
     max_score_cooldown: 2.days.freeze,
     max_score_halflife: 8.hours.freeze,
     decay_threshold: 1,
