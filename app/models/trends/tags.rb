@@ -4,7 +4,7 @@ class Trends::Tags < Trends::Base
   PREFIX = 'trending_tags'
 
   self.default_options = {
-    threshold: 5,
+    threshold: 3,
     review_threshold: 3,
     max_score_cooldown: 2.days.freeze,
     max_score_halflife: 4.hours.freeze,
