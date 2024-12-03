@@ -30,7 +30,7 @@ class AccountsIndex < Chewy::Index
     analyzer: {
       # "The FOOING's bar" becomes "foo bar"
       natural: {
-        tokenizer: 'standard',
+        tokenizer: 'ik_smart',
         filter: %w(
           lowercase
           asciifolding
